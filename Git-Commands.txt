@@ -1,0 +1,49 @@
+git config --global user.name 'arzz-dev'
+git config --global user.email 'emailtoarnabdas@gmail.com'
+
+git add <filename>
+git add *.extension
+git add ./	-> whole file in the current directory
+
+git rm --cached <filename>	-> remove file
+
+git status	-> to know the file status that are added/removed
+
+git commit	-> to commit in local repository and open vim editor
+git commit -m "Your Message" -> vim editor does not open
+git commit -a -m "Your message"	-> No need of 'git add' command, any modified 										file/new file will automaticallu added and 										commited with this message
+
+touch .gitignore	-> ignore the file; touch-> create file(Eg. touch log create 															log file)
+						Save filename.extension in .gitignore file to exclude from commit
+
+git branch <branchName>	-> To create branch; but it does not change to branch
+git checkout <branchName>	-> Switch to branch
+								master is the main branch
+git checkout <hash_first_8_digit> <fileName>
+git checkout <hash>
+
+When You Are In Master
+git merge <branchName>	-> To merge another branch
+
+git remote	-> Shows the remote repository
+git remote add origin <link>	-> to add remote repository
+								Remote repository named as 'origin'
+								Local <--> Remote named 'origin'
+								activity-> push,pull
+
+git pull origin master 	-> Pull from origin(remote) master(branch); Have to do 								this 1st time
+
+git push -u origin master
+git push -> push to remote
+
+git clone <link>
+
+git log	-> shows details and hash values
+
+
+pull = fetch + merge
+		 |--> does not change to mater branch in local
+
+REBASE is similar to MERGE but it also add all the commits in master branch that are commited in <branch>
+
+git rebase <branchName>
