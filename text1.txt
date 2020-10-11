@@ -5,8 +5,13 @@ added 3rd line
 On Branch testBranch
 added 1st line at testBranch
 
+
 Fixed Bug
 again Fixed Buga at line2
 Bug fixing at line3
 
+
+
+Some line added in master
+Again line added in mster
 
